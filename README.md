@@ -1,16 +1,11 @@
-CMake Docker image
-==================
+docker下的cmake开发环境
 
-[![Travis CI](https://travis-ci.org/lycantropos/cmake-docker.svg?branch=master)](https://travis-ci.org/lycantropos/cmake-docker) 
-[![License](https://img.shields.io/github/license/lycantropos/cmake-docker.svg)](https://github.com/lycantropos/cmake-docker/blob/master/LICENSE)
+# 运行
+* `docker-compose up`
+* 最后一行出现`Successfully installed CMake XXX`内容即为正常
 
-Based on [GCC:7](https://hub.docker.com/_/gcc/) `Docker` image.
-
-Running tests
--------------
-
-Inside `Docker` container
-
+# 入库
 ```bash
-docker-compose up
+docker login
+docker push denley/cmake:<VERSION>
 ```

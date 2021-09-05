@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.9.5)
-project(cmake_docker)
+project(cmake_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES cmake_docker.cpp)
-add_executable(cmake_docker ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp)
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
