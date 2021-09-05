@@ -1,11 +1,14 @@
 docker下的cmake开发环境
 
 # 运行
-* `docker-compose up`
-* 最后一行出现`Successfully installed CMake XXX`内容即为正常
+```bash
+docker build -t denley/cmake:<VERSION> .
+```
 
 # 入库
 ```bash
 docker login
 docker push denley/cmake:<VERSION>
+docker tag <IMAGE_ID> denley/cmake:latest
+docker push denley/cmake:latest
 ```
