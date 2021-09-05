@@ -7,6 +7,5 @@ services:
     working_dir: /opt/cmake
     entrypoint: /opt/cmake/docker-entrypoint.sh
     volumes:
-      - ./main.cpp:/opt/cmake/main.cpp
-      - ./CMakeLists.txt:/opt/cmake/CMakeLists.txt
-      - ./docker-entrypoint.sh:/opt/cmake/docker-entrypoint.sh
+      - .:/opt/cmake
+      - ./test:/opt/cmake/test/
